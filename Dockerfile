@@ -1,9 +1,10 @@
-FROM django:19-alpine3.15
+FROM python:3.7
 
 WORKDIR /django-ecom-app
 
 COPY . /django-ecom-app
-RUN pip install
+RUN pip install -r requirements.txt
 
-EXPOSE 3000
-CMD ["python","manage.py","runserver"]
+EXPOSE 8000
+CMD ["python","manage.py","runserver","0.0.0.0:8000"]
+#Remember to open port 8000 in Ec2 Instance
