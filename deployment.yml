@@ -1,20 +1,21 @@
-kind: Deployment
 apiVersion: apps/v1
+kind: Deployment
 metadata:
-   name: abdallah
+  name: django-ecom-deployment
+  labels:
+    app: django-ecom
 spec:
-   replicas: 2
-   selector:      # tells the controller which pods to watch/belong to
+  replicas: 2
+  selector:
     matchLabels:
-     app: abdallah
-   template:
-      metadata:
-        labels:
-          app: abdallah
-      spec:
-       containers:
-        - name: abdallah
-          image: abdallahdoc/django-ecom-app
-          imagePullPolicy: Always
-          ports:
-          - containerPort: 8000
+      app: django-ecom
+  template:
+    metadata:
+      labels:
+        app: django-ecom
+    spec:
+      containers:
+      - name: django-ecom
+        image: abdallahdoc/greatkart-ecom
+        ports:
+        - containerPort: 8000
