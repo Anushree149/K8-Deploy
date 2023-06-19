@@ -17,4 +17,4 @@ spec:
           image: abdallahdoc/django-ecom-app
           imagePullPolicy: Always
           ports:
-          - containerPort: 80
+          - containerPort: 8000
