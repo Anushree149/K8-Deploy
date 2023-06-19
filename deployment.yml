@@ -1,19 +1,19 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: mrdevops
+   name: abdallah
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
-     app: mrdevops
+     app: abdallah
    template:
       metadata:
         labels:
-          app: mrdevops
+          app: abdallah
       spec:
        containers:
-        - name: mrdevops
+        - name: abdallah
           image: abdallahdoc/django-ecom-app
           imagePullPolicy: Always
           ports:
