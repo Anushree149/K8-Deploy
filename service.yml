@@ -1,14 +1,14 @@
-kind: Service                             
 apiVersion: v1
+kind: Service
 metadata:
-  name: abdallah
+  name: django-ecom-service
   labels:
-    app: abdallah
+    app: django-ecom
 spec:
+  type: NodePort
   ports:
-    - port: 8000                               
-      targetPort: 8000                    
-      nodePort: 31200
+  - port: 8000
+    targetPort: 8000
+    nodePort: 31000
   selector:
-    app: abdallah                    
-  type: LoadBalancer                   
+    app: django-ecom
