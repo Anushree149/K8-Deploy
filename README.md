@@ -1,6 +1,7 @@
 # Kubernetes DevOps Project
 
 This repository contains a Kubernetes DevOps project that demonstrates how to deploy a Django application using Kubernetes.
+![Screenshot 2023-09-16 151825](https://github.com/Ab-D-ev/kubernetes-devops-project/assets/88940690/5c97db22-bd81-46e5-a344-c3b5409e349f)
 
 ## Prerequisites
 
