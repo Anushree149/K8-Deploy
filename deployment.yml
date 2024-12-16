@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: django-ecom
-        image: abdallahdoc/greatkart-ecom
+        image: anushree039/k8-deployment
         ports:
         - containerPort: 8000
